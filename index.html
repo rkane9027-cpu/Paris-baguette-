@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Paris Baguettes — Restaurant gastronomique et supermarché premium au cœur d'Abidjan. Saveurs authentiques, produits frais, expérience unique." />
+  <title>Paris Baguettes — Restaurant & Supermarché Premium</title>
+
+  <!-- Google Fonts : Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#accueil" class="nav-logo">
+        <span class="logo-icon">🥐</span>
+        <span class="logo-text">Paris <em>Baguettes</em></span>
+      </a>
+
+      <!-- Liens de navigation -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil"     class="nav-link active">Accueil</a></li>
+        <li><a href="#restaurant"  class="nav-link">Restaurant</a></li>
+        <li><a href="#supermarche" class="nav-link">Supermarché</a></li>
+        <li><a href="#produits"    class="nav-link">Produits</a></li>
+        <li><a href="#temoignages" class="nav-link">Avis</a></li>
+        <li><a href="#contact"     class="nav-link">Contact</a></li>
+        <li><a href="#reservation" class="nav-cta">Réserver</a></li>
+      </ul>
+
+      <!-- Bouton hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO (vidéo en arrière-plan) ==================== -->
+  <section class="hero" id="accueil">
+    <div class="hero-video-wrapper">
+      <!-- Vidéo locale uploadée par l'utilisateur -->
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-badge">✦ Depuis 1987 ✦</span>
+      <h1 class="hero-title">
+        L'Art de la <em>Gastronomie</em><br />Française
+      </h1>
+      <p class="hero-subtitle">
+        Restaurant étoilé et supermarché premium au cœur d'Abidjan.<br />
+        Des produits d'exception, des saveurs inoubliables.
+      </p>
+      <div class="hero-actions">
+        <a href="#reservation" class="btn btn-primary">Réserver une table</a>
+        <a href="#restaurant"  class="btn btn-ghost">Découvrir</a>
+      </div>
+
+      <!-- Statistiques rapides avec compteurs animés -->
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-number" data-target="37">0</span>
+          <span class="stat-label">Ans d'expérience</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-number" data-target="4200">0</span>
+          <span class="stat-label">Clients / semaine</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Étoiles Michelin</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicateur de défilement -->
+    <div class="scroll-indicator">
+      <span>Défiler</span>
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ==================== BENTO GRID ==================== -->
+  <section class="bento-section" id="bento">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Notre univers</span>
+        <h2 class="section-title">Une expérience <em>complète</em></h2>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-card bento-large reveal">
+          <div class="bento-img" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80')"></div>
+          <div class="bento-content">
+            <span class="bento-tag">Restaurant</span>
+            <h3>Gastronomie étoilée</h3>
+            <p>Une cuisine d'exception sublimée par nos chefs</p>
+          </div>
+        </div>
+        <div class="bento-card bento-small reveal">
+          <div class="bento-img" style="background-image:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80')"></div>
+          <div class="bento-content">
+            <span class="bento-tag">Boulangerie</span>
+            <h3>Pains artisanaux</h3>
+            <p>Cuits chaque matin</p>
+          </div>
+        </div>
+        <div class="bento-card bento-small reveal">
+          <div class="bento-img" style="background-image:url('https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=600&q=80')"></div>
+          <div class="bento-content">
+            <span class="bento-tag">Épicerie Fine</span>
+            <h3>Produits du terroir</h3>
+            <p>Sélection premium</p>
+          </div>
+        </div>
+        <div class="bento-card bento-medium reveal">
+          <div class="bento-img" style="background-image:url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=700&q=80')"></div>
+          <div class="bento-content">
+            <span class="bento-tag">Bar à cocktails</span>
+            <h3>Mixologie d'auteur</h3>
+            <p>Cocktails signatures & vins naturels</p>
+          </div>
+        </div>
+        <div class="bento-card bento-medium reveal">
+          <div class="bento-img" style="background-image:url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=700&q=80')"></div>
+          <div class="bento-content">
+            <span class="bento-tag">Traiteur</span>
+            <h3>Livraison & Click & Collect</h3>
+            <p>Nos plats chez vous en 45 min</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COMPTEURS ANIMÉS ==================== -->
+  <section class="counters-section">
+    <div class="container">
+      <div class="counters-grid">
+        <div class="counter-item reveal">
+          <span class="counter-number" data-target="1200">0</span><span class="counter-suffix">+</span>
+          <span class="counter-label">Références en épicerie</span>
+        </div>
+        <div class="counter-item reveal">
+          <span class="counter-number" data-target="98">0</span><span class="counter-suffix">%</span>
+          <span class="counter-label">Clients satisfaits</span>
+        </div>
+        <div class="counter-item reveal">
+          <span class="counter-number" data-target="12">0</span><span class="counter-suffix"></span>
+          <span class="counter-label">Chefs étoilés</span>
+        </div>
+        <div class="counter-item reveal">
+          <span class="counter-number" data-target="365">0</span><span class="counter-suffix">j/an</span>
+          <span class="counter-label">Ouvert toute l'année</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION RESTAURANT ==================== -->
+  <section class="restaurant-section" id="restaurant">
+    <div class="container">
+      <div class="split-layout">
+        <!-- Images empilées -->
+        <div class="split-images reveal">
+          <div class="img-main" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=80')"></div>
+          <div class="img-accent" style="background-image:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80')"></div>
+          <div class="img-badge"><span>⭐⭐⭐</span><small>Michelin 2024</small></div>
+        </div>
+
+        <div class="split-content reveal">
+          <span class="section-badge">Notre restaurant</span>
+          <h2 class="section-title">Une table <em>d'exception</em></h2>
+          <p class="section-desc">
+            Depuis 1987, notre restaurant perpétue la tradition gastronomique française avec une touche de modernité. Chaque plat est une ode à la cuisine de terroir, réinventée par nos chefs étoilés.
+          </p>
+
+          <ul class="feature-list">
+            <li>
+              <span class="feature-icon">🍽️</span>
+              <div><strong>Menus dégustation</strong><span>7 à 12 services, accords mets-vins inclus</span></div>
+            </li>
+            <li>
+              <span class="feature-icon">🥩</span>
+              <div><strong>Produits locaux</strong><span>100 % des viandes issues de fermes françaises</span></div>
+            </li>
+            <li>
+              <span class="feature-icon">🌿</span>
+              <div><strong>Menu végétalien</strong><span>Carte saisonnière renouvelée chaque semaine</span></div>
+            </li>
+            <li>
+              <span class="feature-icon">🏆</span>
+              <div><strong>Événements privés</strong><span>Réceptions, mariages, séminaires d'entreprise</span></div>
+            </li>
+          </ul>
+
+          <div class="opening-hours">
+            <h4>Horaires d'ouverture</h4>
+            <div class="hours-grid">
+              <span>Lun – Ven</span><span>12h – 14h30 · 19h – 23h</span>
+              <span>Samedi</span><span>12h – 15h · 19h – 23h30</span>
+              <span>Dimanche</span><span>12h – 15h30 · Fermé le soir</span>
+            </div>
+          </div>
+          <a href="#reservation" class="btn btn-primary">Réserver une table</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION SUPERMARCHÉ ==================== -->
+  <section class="supermarche-section" id="supermarche">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Notre supermarché</span>
+        <h2 class="section-title">L'épicerie fine <em>réinventée</em></h2>
+        <p class="section-desc">Plus de 1 200 références soigneusement sélectionnées pour composer votre table idéale.</p>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card reveal"><div class="cat-icon">🥖</div><h3>Boulangerie</h3><p>Pains, viennoiseries et pâtisseries fraîches chaque matin</p><span class="cat-count">+80 références</span></div>
+        <div class="category-card reveal"><div class="cat-icon">🧀</div><h3>Fromagerie</h3><p>200 fromages affinés par nos maîtres fromagers</p><span class="cat-count">+200 fromages</span></div>
+        <div class="category-card reveal"><div class="cat-icon">🍷</div><h3>Cave à vins</h3><p>Vins naturels, biodynamiques et grands crus</p><span class="cat-count">+350 références</span></div>
+        <div class="category-card reveal"><div class="cat-icon">🥩</div><h3>Boucherie</h3><p>Viandes d'élevage AOC, maturées sur place</p><span class="cat-count">+60 coupes</span></div>
+        <div class="category-card reveal"><div class="cat-icon">🫙</div><h3>Épicerie sèche</h3><p>Conserves artisanales, huiles, vinaigres, condiments rares</p><span class="cat-count">+400 références</span></div>
+        <div class="category-card reveal"><div class="cat-icon">🌸</div><h3>Traiteur</h3><p>Plats cuisinés par nos chefs, prêts à emporter</p><span class="cat-count">Chaque jour</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CARROUSEL PRODUITS ==================== -->
+  <section class="produits-section" id="produits">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Nos produits phares</span>
+        <h2 class="section-title">Les <em>incontournables</em></h2>
+      </div>
+
+      <div class="carousel-wrapper">
+        <div class="carousel" id="carousel">
+
+          <div class="product-card">
+            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=500&q=80')">
+              <span class="product-badge">Bestseller</span>
+              <button class="product-wishlist" aria-label="Favoris">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Boulangerie</span>
+              <h3>Baguette tradition</h3>
+              <p>Farine bio T65, fermentation lente 24h</p>
+              <div class="product-footer">
+                <span class="product-price">900 F CFA</span>
+                <button class="btn-cart">+ Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1452195100486-9cc805987862?w=500&q=80')">
+              <span class="product-badge new">Nouveau</span>
+              <button class="product-wishlist" aria-label="Favoris">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Fromagerie</span>
+              <h3>Comté 36 mois</h3>
+              <p>Affinage extra long, notes de noisette</p>
+              <div class="product-footer">
+                <span class="product-price">18 700 F CFA/kg</span>
+                <button class="btn-cart">+ Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=500&q=80')">
+              <span class="product-badge promo">–15%</span>
+              <button class="product-wishlist" aria-label="Favoris">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Cave à vins</span>
+              <h3>Château Margaux 2018</h3>
+              <p>Médoc AOC, grand vin de Bordeaux</p>
+              <div class="product-footer">
+                <span class="product-price">123 900 F CFA</span>
+                <button class="btn-cart">+ Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1535473895227-bdecb20fb157?w=500&q=80')">
+              <button class="product-wishlist" aria-label="Favoris">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Traiteur</span>
+              <h3>Foie gras entier mi-cuit</h3>
+              <p>Foie de canard IGP Périgord, sel de Guérande</p>
+              <div class="product-footer">
+                <span class="product-price">35 000 F CFA/200g</span>
+                <button class="btn-cart">+ Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1574914629385-46448b342a1d?w=500&q=80')">
+              <span class="product-badge">Artisan</span>
+              <button class="product-wishlist" aria-label="Favoris">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Pâtisserie</span>
+              <h3>Croissant pur beurre</h3>
+              <p>Tourage traditionnel, beurre AOP Charentes</p>
+              <div class="product-footer">
+                <span class="product-price">1 400 F CFA</span>
+                <button class="btn-cart">+ Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=500&q=80')">
+              <span class="product-badge new">Nouveau</span>
+              <button class="product-wishlist" aria-label="Favoris">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Chocolaterie</span>
+              <h3>Tablette grand cru</h3>
+              <p>Cacao Criollo 78 %, origine Madagascar</p>
+              <div class="product-footer">
+                <span class="product-price">5 800 F CFA</span>
+                <button class="btn-cart">+ Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1547592180-85f173990554?w=500&q=80')">
+              <button class="product-wishlist" aria-label="Favoris">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Épicerie fine</span>
+              <h3>Truffe noire du Périgord</h3>
+              <p>Tuber melanosporum, extra fraîche, calibre 1</p>
+              <div class="product-footer">
+                <span class="product-price">640 000 F CFA/kg</span>
+                <button class="btn-cart">+ Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500&q=80')">
+              <span class="product-badge promo">–20%</span>
+              <button class="product-wishlist" aria-label="Favoris">♡</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Café & thé</span>
+              <h3>Blend maison Paris Baguettes</h3>
+              <p>Arabica d'Éthiopie & Colombie, torréfaction artisanale</p>
+              <div class="product-footer">
+                <span class="product-price">9 500 F CFA/250g</span>
+                <button class="btn-cart">+ Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Boutons de navigation du carrousel -->
+        <button class="carousel-btn carousel-prev" id="prevBtn" aria-label="Précédent">&#8592;</button>
+        <button class="carousel-btn carousel-next" id="nextBtn" aria-label="Suivant">&#8594;</button>
+        <!-- Points indicateurs -->
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FORMULAIRE DE RÉSERVATION ==================== -->
+  <section class="reservation-section" id="reservation">
+    <div class="container">
+      <div class="reservation-wrapper">
+
+        <div class="reservation-info reveal">
+          <span class="section-badge">Réservation</span>
+          <h2 class="section-title">Réservez votre <em>table</em></h2>
+          <p>Garantissez votre place dans notre restaurant pour une expérience gastronomique inoubliable.</p>
+          <div class="res-features">
+            <div class="res-feature"><span>✓</span> Confirmation instantanée par email</div>
+            <div class="res-feature"><span>✓</span> Annulation gratuite jusqu'à 24h avant</div>
+            <div class="res-feature"><span>✓</span> Menu personnalisable sur demande</div>
+            <div class="res-feature"><span>✓</span> Disponible 7j/7 en ligne</div>
+          </div>
+          <div class="contact-direct">
+            <p>Ou appelez-nous directement :</p>
+            <a href="tel:+2250700000000" class="phone-link">+225 07 00 00 00 00</a>
+          </div>
+        </div>
+
+        <form class="reservation-form reveal" id="reservationForm" novalidate>
+          <h3>Vos informations</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Marie" required autocomplete="given-name" />
+              <span class="form-error" id="errPrenom"></span>
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" placeholder="Dupont" required autocomplete="family-name" />
+              <span class="form-error" id="errNom"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="marie@exemple.fr" required autocomplete="email" />
+            <span class="form-error" id="errEmail"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="+33 6 00 00 00 00" autocomplete="tel" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date *</label>
+              <input type="date" id="date" name="date" required />
+              <span class="form-error" id="errDate"></span>
+            </div>
+            <div class="form-group">
+              <label for="heure">Heure *</label>
+              <select id="heure" name="heure" required>
+                <option value="">Choisir</option>
+                <option value="12:00">12h00</option>
+                <option value="12:30">12h30</option>
+                <option value="13:00">13h00</option>
+                <option value="19:00">19h00</option>
+                <option value="19:30">19h30</option>
+                <option value="20:00">20h00</option>
+                <option value="20:30">20h30</option>
+                <option value="21:00">21h00</option>
+              </select>
+              <span class="form-error" id="errHeure"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="couverts">Couverts *</label>
+              <select id="couverts" name="couverts" required>
+                <option value="">Choisir</option>
+                <option value="1">1 personne</option>
+                <option value="2">2 personnes</option>
+                <option value="3">3 personnes</option>
+                <option value="4">4 personnes</option>
+                <option value="5">5 personnes</option>
+                <option value="6">6 personnes</option>
+                <option value="7">7+ personnes</option>
+              </select>
+              <span class="form-error" id="errCouverts"></span>
+            </div>
+            <div class="form-group">
+              <label for="menu">Menu</label>
+              <select id="menu" name="menu">
+                <option value="">À la carte</option>
+                <option value="degustation">Dégustation 7 services</option>
+                <option value="prestige">Prestige 12 services</option>
+                <option value="vegetalien">Végétalien</option>
+                <option value="affaires">Menu d'affaires</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Demandes particulières</label>
+            <textarea id="message" name="message" rows="3" placeholder="Allergies, occasion spéciale, terrasse…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-text">Confirmer la réservation</span>
+          </button>
+
+          <div class="form-success" id="formSuccess" hidden>
+            <span>✓</span> Votre réservation a été envoyée ! Confirmation par email sous peu.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TÉMOIGNAGES CLIENTS ==================== -->
+  <section class="temoignages-section" id="temoignages">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Avis clients</span>
+        <h2 class="section-title">Ce que disent <em>nos clients</em></h2>
+        <div class="rating-summary">
+          <div class="stars">★★★★★</div>
+          <span>4,9 / 5 · 2 847 avis</span>
+        </div>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card featured reveal">
+          <div class="testimonial-quote">"</div>
+          <p>Une expérience absolument mémorable. Le menu dégustation était une véritable symphonie de saveurs. Les vins sélectionnés par le sommelier ont sublimé chaque plat. Nous reviendrons certainement !</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#b8860b,#f0c040)">SC</div>
+            <div><strong>Sophie Clément</strong><span>Paris · Cliente depuis 5 ans</span><div class="stars small">★★★★★</div></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <p>Le supermarché est une mine d'or pour les amoureux de bonne cuisine. Le rayon fromagerie est absolument exceptionnel.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#1a6b3c,#34d070)">TM</div>
+            <div><strong>Thomas Maréchal</strong><span>Vincennes · Client régulier</span><div class="stars small">★★★★★</div></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <p>Nous avons organisé notre mariage dans la salle privée. L'équipe a été d'un professionnalisme remarquable. Nos 80 invités ont été conquis.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#8b1a8b,#e040e0)">LP</div>
+            <div><strong>Laura & Pierre</strong><span>Saint-Germain · Mariage 2024</span><div class="stars small">★★★★★</div></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <p>Le service click & collect est parfait. Je commande le soir et mes croissants sont toujours impeccables le lendemain matin.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#1a4a8b,#4080e0)">AB</div>
+            <div><strong>Antoine Bernard</strong><span>Boulogne · Client quotidien</span><div class="stars small">★★★★☆</div></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <p>La cave à vins est exceptionnelle. Le caviste m'a aidé à composer une sélection pour un dîner d'affaires. Ses conseils étaient précis.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#8b4a1a,#e08040)">CD</div>
+            <div><strong>Claire Dubois</strong><span>Neuilly · Sommelière amateur</span><div class="stars small">★★★★★</div></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <p>Le chef a préparé un menu personnalisé pour mon anniversaire en tenant compte de mes allergies. Une attention aux détails rarissime.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#1a8b6b,#40e0c0)">MR</div>
+            <div><strong>Marc Rousseau</strong><span>Paris 8e · Blogueur gastronomique</span><div class="stars small">★★★★★</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ACCORDÉON ==================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="faq-wrapper">
+        <div class="faq-header reveal">
+          <span class="section-badge">Questions fréquentes</span>
+          <h2 class="section-title">Tout ce que vous <em>voulez savoir</em></h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Faut-il réserver pour le restaurant ?</span><span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>La réservation est fortement recommandée, surtout le week-end. Pour les groupes de plus de 6 personnes, elle est obligatoire au minimum 48h à l'avance.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Proposez-vous des options végétariennes et végétaliennes ?</span><span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolument. Notre carte propose des options végétariennes et végétaliennes élaborées avec le même soin. Un menu dégustation entièrement végétalien est disponible sur demande 24h à l'avance.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Comment fonctionne le Click & Collect ?</span><span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Composez votre panier en ligne. Votre commande est disponible en boutique dans un délai de 2h minimum, ou le lendemain matin pour les commandes après 18h. Livraison à domicile dans un rayon de 20 km.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Gérez-vous les allergies alimentaires ?</span><span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Oui, la sécurité alimentaire est une priorité. Merci d'indiquer vos allergies lors de la réservation. Notre brigade est formée à la gestion des 14 allergènes majeurs.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Peut-on privatiser le restaurant ?</span><span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Oui, nous proposons une salle privatisable de 40 à 120 couverts pour vos événements professionnels ou personnels. Contactez notre équipe pour un devis personnalisé.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              <span>Proposez-vous un programme de fidélité ?</span><span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Notre carte Club Paris Baguettes vous permet de cumuler des points à chaque achat (1€ = 1 point). À partir de 200 points, bénéficiez de réductions et d'invitations à nos soirées dégustation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT & LOCALISATION ==================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Contact & Localisation</span>
+        <h2 class="section-title">Venez nous <em>rendre visite</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card"><span class="contact-icon">📍</span><div><h4>Adresse</h4><p>Avenue Chardy, Plateau<br />Abidjan, Côte d'Ivoire</p></div></div>
+          <div class="contact-card"><span class="contact-icon">📞</span><div><h4>Téléphone</h4><p><a href="tel:+2250700000000">+225 07 00 00 00 00</a></p><p><small>Lun–Ven 8h–22h · Sam–Dim 8h–23h</small></p></div></div>
+          <div class="contact-card"><span class="contact-icon">✉️</span><div><h4>Email</h4><p><a href="mailto:contact@parisbaguettes.ci">contact@parisbaguettes.ci</a></p></div></div>
+          <div class="contact-card"><span class="contact-icon">🚌</span><div><h4>Accès</h4><p>Bus SOTRA lignes 05, 18<br />Taxi communal — Plateau centre</p></div></div>
+        </div>
+
+        <!-- Carte stylisée -->
+        <div class="map-placeholder reveal">
+          <div class="map-inner">
+            <div class="map-grid"></div>
+            <div class="map-marker">
+              <div class="map-pin">📍</div>
+              <div class="map-label">Paris Baguettes<br /><small>Avenue Chardy, Plateau, Abidjan</small></div>
+            </div>
+          </div>
+          <a href="https://maps.google.com/?q=Avenue+Chardy+Plateau+Abidjan" target="_blank" rel="noopener" class="map-btn">
+            Ouvrir dans Google Maps ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- WhatsApp CTA intégré -->
+      <div class="whatsapp-cta reveal">
+        <div class="whatsapp-content">
+          <span class="whatsapp-icon">💬</span>
+          <div>
+            <h3>Une question rapide ?</h3>
+            <p>Contactez-nous sur WhatsApp — réponse en moins de 30 minutes !</p>
+          </div>
+          <a href="https://wa.me/2250700000000?text=Bonjour%20Paris%20Baguettes%20!" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.61L0 24l6.545-1.717C8.198 23.123 10.059 23.6 12 23.6 18.627 23.6 24 18.227 24 11.6 24 4.973 18.627 0 12 0zm0 21.6c-1.8 0-3.493-.468-4.964-1.289l-.356-.211-3.686.966.983-3.593-.232-.368A9.538 9.538 0 012.4 12 9.6 9.6 0 0112 2.4 9.6 9.6 0 0121.6 12 9.6 9.6 0 0112 21.6z"/></svg>
+            Écrire sur WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER PROFESSIONNEL ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#accueil" class="nav-logo footer-logo">
+            <span class="logo-icon">🥐</span>
+            <span class="logo-text">Paris <em>Baguettes</em></span>
+          </a>
+          <p>Restaurant gastronomique étoilé et supermarché premium au cœur d'Abidjan depuis 1987. L'excellence française à votre table.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.77 1.52V6.76a4.85 4.85 0 01-1-.07z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Restaurant</h4>
+          <ul>
+            <li><a href="#restaurant">Notre histoire</a></li>
+            <li><a href="#restaurant">La carte</a></li>
+            <li><a href="#reservation">Réserver</a></li>
+            <li><a href="#restaurant">Menus dégustation</a></li>
+            <li><a href="#contact">Événements privés</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Supermarché</h4>
+          <ul>
+            <li><a href="#supermarche">Boulangerie</a></li>
+            <li><a href="#supermarche">Fromagerie</a></li>
+            <li><a href="#supermarche">Cave à vins</a></li>
+            <li><a href="#supermarche">Traiteur</a></li>
+            <li><a href="#supermarche">Click & Collect</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Confidentialité</a></li>
+            <li><a href="#">Conditions de vente</a></li>
+            <li><a href="#">Recrutement</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Paris Baguettes. Tous droits réservés. Fait avec ♥ à Abidjan.</p>
+        <div class="footer-payments">
+          <span>CB</span><span>Visa</span><span>MC</span><span>Apple Pay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== ÉLÉMENTS FLOTTANTS ==================== -->
+
+  <!-- Bouton WhatsApp flottant -->
+  <a href="https://wa.me/2250700000000?text=Bonjour%20Paris%20Baguettes%20!" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.61L0 24l6.545-1.717C8.198 23.123 10.059 23.6 12 23.6 18.627 23.6 24 18.227 24 11.6 24 4.973 18.627 0 12 0zm0 21.6c-1.8 0-3.493-.468-4.964-1.289l-.356-.211-3.686.966.983-3.593-.232-.368A9.538 9.538 0 012.4 12 9.6 9.6 0 0112 2.4 9.6 9.6 0 0121.6 12 9.6 9.6 0 0112 21.6z"/>
+    </svg>
+    <span class="whatsapp-pulse"></span>
+  </a>
+
+  <!-- Bouton retour en haut -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut" hidden>↑</button>
+
+  <!-- Script JavaScript principal -->
+  <script type="module" src="./src/script.js"></script>
+</body>
+</html>
